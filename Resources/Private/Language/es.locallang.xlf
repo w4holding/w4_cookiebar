@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="es" datatype="plaintext" original="messages" date="2021-12-02T11:47:10Z" product-name="w4Cookiebar">
+        <header/>
+        <body>
+            <trans-unit id="w4_cookiebar.title" xml:space="preserve">
+                <source>We use cookies</source>
+                <target>Utilizamos cookies</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.note" xml:space="preserve">
+                <source>We are using cookies to create an optimal user experience for our visitors.</source>
+                <target>Utilizamos cookies para asegurar que damos la mejor experiencia al usuario en nuestro sitio web.</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.link_text" xml:space="preserve">
+                <source>Privacy policy</source>
+                <target>Política de privacidad</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.analytics_label" xml:space="preserve">
+                <source>Analysis &amp; Marketing</source>
+                <target>Análisis y marketing</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.analytics_text" xml:space="preserve">
+                <source>To better understand what how visitors use our webpage.</source>
+                <target>Así entenderemos mejor el uso que hace el usuario de nuestro sitio web.</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.maps_label" xml:space="preserve">
+                <source>Location maps</source>
+                <target>Mapas de ubicación</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.maps_text" xml:space="preserve">
+                <source>This allows to show you maps from Google or Baidu.</source>
+                <target>Para que podamos mostrar los mapas online de Google o Baidu.</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.base_label" xml:space="preserve">
+                <source>Essential cookies</source>
+                <target>Cookies básicas</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.base_text" xml:space="preserve">
+                <source>These are required for the pages to function properly.</source>
+                <target>Necesitamos estas cookies para el correcto funcionamiento de este sitio.</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.allow_selected" xml:space="preserve">
+                <source>Only selected and required</source>
+                <target>Solo las seleccionadas o necesarias</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.allow_all" xml:space="preserve">
+                <source>Allow all</source>
+                <target>Aceptar todas</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.edit_button_title" xml:space="preserve">
+                <source>Edit cookie settings</source>
+                <target>Editar la configuración de las cookies</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.conditional_google_maps.popup_text" xml:space="preserve">
+                <source>Please click the button so that Google Maps can be displayed.</source>
+                <target>Haga clic en el botón para mostrar Google Maps.</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.conditional_google_maps.popup_button" xml:space="preserve">
+                <source>Allow Google Maps</source>
+                <target>Permitir Google Maps</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.conditional_marketing.popup_text" xml:space="preserve">
+                <source>Please click the button so that Marketing can be displayed.</source>
+                <target>Haga clic en el botón para permitir contenido de análisis de márketing</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.conditional_marketing.popup_button" xml:space="preserve">
+                <source>Allow Marketing / Analysis content</source>
+                <target>Permitir contenido de análisis de márketing</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

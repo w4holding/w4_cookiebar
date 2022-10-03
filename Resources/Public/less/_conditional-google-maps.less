@@ -1,0 +1,79 @@
+@import (reference) "_variables.less";
+
+/**
+ * cookie conditional google maps
+ */
+.cookie-conditional-google-maps {
+    position: relative;
+
+    .gdpr-hint-wrapper {
+        >img {
+            max-height: none;
+        }
+    }
+
+    .gdpr-hint {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border: #e3e3e3 solid 3px;
+        width: auto;
+        max-width: 300px;
+        height: 150px;
+
+        @media only screen and (min-width : @size_screen-min-sm) {
+            height: 120px;
+        }
+
+        background: white;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+
+        >p {
+            text-align: center;
+            text-wrap: avoid;
+        }
+
+    }
+
+    .btn {
+        margin: 10px;
+        background: @color_ci_main;
+        color: @color_ci_main_text;
+    }
+}
+
+.headSection {
+    .cookie-conditional-google-maps {
+        .gdpr-hint-wrapper {
+            text-align: center;
+
+            >img {
+                width: auto;
+                max-height: 400px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : @size_screen-min-xs) {}
+
+@media only screen and (min-width : @size_screen-min-sm) {}
+
+@media only screen and (min-width : @size_screen-min-md) {}
+
+@media only screen and (min-width : @size_screen-min-lg) {}
+
+@media only screen and (min-width : @size_screen-min-xl) {}
+
+@media only screen and (min-width : @size_screen-min-max) {}

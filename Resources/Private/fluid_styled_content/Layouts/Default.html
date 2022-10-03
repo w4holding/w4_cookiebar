@@ -1,0 +1,36 @@
+{f:cObject(typoscriptObjectPath: 'lib.cookiedata')}
+<div id="cookie_bar_v2" class="position-{data.w4_cookiebar_position}">
+    <div class="container">
+
+        <div id="cookie_bar_v2_head">
+            <strong>
+                <f:translate key="LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang.xlf:w4.cookie_banner_title"/></strong>
+        </div>
+
+        <f:render section="ContentRow" />
+
+        <div id="cookie_bar_v2_btns">
+            <a href="#" class="btn" id="cookie_bar_allow_selected">
+                <f:if condition="{data.w4_cookiebar_button_text} != ''">
+                    <f:then>
+                        {data.w4_cookiebar_button_text}
+                    </f:then>
+                    <f:else>
+                        {f:translate( key:'LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang.xlf:w4.cookie_banner_allow_selected', default:'only selected')}
+                    </f:else>
+                </f:if>
+            </a>
+            <a href="#" class="btn" id="cookie_bar_allow_all">
+                <f:translate key="LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang.xlf:w4.cookie_banner_allow_all"/>
+            </a>
+        </div>
+    </div>
+</div>
+<f:if condition="{data.w4_cookiebar_edit}">
+    <div id="cookie_bar_edit_button" class="bottom-left">
+        <a href="#" class="btn" title="{f:translate( key:'LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang.xlf:w4.cookie_banner_edit_button_title', default:'edit cookies')}">
+            Cookies
+        </a>
+    </div>
+</f:if>
+

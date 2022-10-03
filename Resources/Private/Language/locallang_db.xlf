@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="messages" date="2019-03-12T13:04:15Z" product-name="w4Cookiebar">
+        <header/>
+        <body>
+            <trans-unit id="w4_cookiebar.ctype.banner" xml:space="preserve">
+                <source>Cookie Banner</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.ctype.edit_button" xml:space="preserve">
+                <source>Cookie Banner edit button</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.ctype.conditional_google_maps" xml:space="preserve">
+                <source>Cookie Consent HTML Wrapper</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.palette.banner" xml:space="preserve">
+                <source>Cookie Banner</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.palette.conditionalGoogleMaps" xml:space="preserve">
+                <source>Cookie controlled Google Maps</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.wizard.title" xml:space="preserve">
+                <source>Cookie Banner</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.wizard.description" xml:space="preserve">
+                <source>Create editable Cookie Banner</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.widget.text" xml:space="preserve">
+                <source>Cookie Banner</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.text" xml:space="preserve">
+                <source>Text (if empty, default text will be used)</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.w4_cookiebar_position" xml:space="preserve">
+                <source>Position of the banner</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.w4_cookiebar_position.top" xml:space="preserve">
+                <source>Top</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.w4_cookiebar_position.bottom" xml:space="preserve">
+                <source>Bottom</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.button_text" xml:space="preserve">
+                <source>Button text</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.datenschutz_text" xml:space="preserve">
+                <source>Privacy text (if empty, default text will be used)</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.datenschutz_link" xml:space="preserve">
+                <source>Privacy link</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.wrapper_options" xml:space="preserve">
+                <source>Show wrapper if cookie consent is given fot it</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.google_maps_code" xml:space="preserve">
+                <source>HTML-Code (e.g. iframe)</source>
+            </trans-unit> 
+            <trans-unit id="w4_cookiebar.google_maps_placeholder_image" xml:space="preserve">
+                <source>Placeholder image (if cookies are not accepted)</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.edit" xml:space="preserve">
+                <source>Show Edit cookie settings button</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,25 @@
+<p>
+    <f:if condition="{data.w4_cookiebar_text} != ''">
+        <f:then>
+            {data.w4_cookiebar_text}
+        </f:then>
+        <f:else>
+            {f:translate( key:'LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang.xlf:w4.cookie_banner_note', default:'...')}
+        </f:else>
+    </f:if>
+    <br />
+    <br />
+    <f:link.typolink
+            parameter="{data.w4_cookiebar_datenschutz_link}"
+            target="_blank"
+    >
+        <f:if condition="{data.w4_cookiebar_datenschutz_text} != ''">
+            <f:then>
+                {data.w4_cookiebar_datenschutz_text}
+            </f:then>
+            <f:else>
+                {f:translate( key:'LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang.xlf:w4.cookie_banner_link_text', default:'Data Privacy')}
+            </f:else>
+        </f:if>
+    </f:link.typolink>
+</p>

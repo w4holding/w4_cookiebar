@@ -1,0 +1,101 @@
+{namespace w4=W4Services\W4Cookiebar\ViewHelpers}
+
+<div id="c{data.uid}" class="frame frame-{data.frame_class} frame-type-{data.CType} frame-layout-{data.layout}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
+
+    <f:if condition="{data.w4_cookiebar_wrapper_options} == 'marketing'" >
+        <div class="cookie-conditional-marketing" xmlns:f="http://www.w3.org/1999/html">
+            <div class="marketing-content"></div>
+            <div class="gdpr-hint-wrapper">
+                <f:comment>render the "background" image</f:comment>
+                <f:for each="{files}" as="image">
+                    <f:image image="{image}" alt="" />
+                </f:for>
+                <f:comment>render the popup</f:comment>
+                <div class="gdpr-hint">
+                    <p><f:format.raw>{f:translate( key:'LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang.xlf:w4_cookiebar..conditional_marketing.popup_text', default:'please confirm to display google maps')}</f:format.raw></p>
+                    <a class="btn btn-blue" id="accept-marketing">
+                        {f:translate( key:'LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang.xlf:w4_cookiebar..conditional_marketing.popup_button', default:'allow')}
+                    </a>
+                </div>
+            </div>
+            <f:comment>render the HTML source code</f:comment>
+            <!-- BEGIN Marketing -->
+            <script>
+                document.addEventListener("DOMContentLoaded",function () {
+                    var marketingLoaded = false;
+                    var f = function() {
+                        if (document.cookie.indexOf('<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_a') >= 0 && !marketingLoaded) {
+                            marketingLoaded = true;
+                            jQuery('#c<f:format.raw>{data.uid}</f:format.raw> .cookie-conditional-marketing > .marketing-content').html(
+                                '<f:format.raw>{data.bodytext}</f:format.raw>'
+                            );
+                            jQuery('.cookie-conditional-marketing > .gdpr-hint-wrapper').hide();
+                        }
+                        document.dispatchEvent(
+                            new Event(
+                                '<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_dismissed'
+                            )
+                        );
+                    };
+                    f();
+                    jQuery('html').on('<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_dismissed', f);
+                    jQuery('#accept-marketing').on('click', function() {
+                        setTimeout(function() {
+                            f();
+                        }, 1000);
+                    });
+                }, false);
+            </script>
+            <!-- END Marketing -->
+        </div>
+    </f:if>
+
+    <f:if condition="{data.w4_cookiebar_wrapper_options} == 'maps'" >
+        <div class="cookie-conditional-google-maps" xmlns:f="http://www.w3.org/1999/html">
+            <div class="maps-content"></div>
+            <div class="gdpr-hint-wrapper">
+                <f:comment>render the "background" image</f:comment>
+                <f:for each="{files}" as="image">
+                    <f:image image="{image}" alt="google maps" />
+                </f:for>
+                <f:comment>render the popup</f:comment>
+                <div class="gdpr-hint">
+                    <p><f:format.raw>{f:translate( key:'LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang.xlf:w4_cookiebar.conditional_google_maps.popup_text', default:'please confirm to display google maps')}</f:format.raw></p>
+                    <a class="btn btn-blue" id="accept-google-maps">
+                        {f:translate( key:'LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang.xlf:w4_cookiebar.conditional_google_maps.popup_button', default:'allow')}
+                    </a>
+                </div>
+            </div>
+            <f:comment>render the HTML source code</f:comment>
+            <!-- BEGIN Google Maps -->
+            <script>
+                document.addEventListener("DOMContentLoaded",function () {
+                    var mapsLoaded = false;
+                    var f = function() {
+                        if (document.cookie.indexOf('<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_m') >= 0 && !mapsLoaded) {
+                            mapsLoaded = true;
+                            jQuery('#c<f:format.raw>{data.uid}</f:format.raw> .cookie-conditional-google-maps > .maps-content').html(
+                                '<f:format.raw>{data.bodytext}</f:format.raw>'
+                            );
+                            jQuery('.cookie-conditional-google-maps > .gdpr-hint-wrapper').hide();
+                        }
+                        document.dispatchEvent(
+                            new Event(
+                                '<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_dismissed'
+                            )
+                        );
+                    };
+                    f();
+                    jQuery('html').on('<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_dismissed', f);
+                    jQuery('#accept-google-maps').on('click', function() {
+                        setTimeout(function() {
+                            f();
+                        }, 1000);
+                    });
+                }, false);
+            </script>
+            <!-- END Google Maps -->
+        </div>
+    </f:if>
+
+</div> 

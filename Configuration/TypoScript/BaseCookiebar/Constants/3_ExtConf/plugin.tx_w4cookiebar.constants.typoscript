@@ -1,0 +1,23 @@
+plugin.tx_w4cookiebar {
+
+    view {
+        templateRootPath = EXT:w4_cookiebar/Resources/Private/fluid_styled_content/Templates/
+        partialRootPath  = EXT:w4_cookiebar/Resources/Private/fluid_styled_content/Partials/
+        layoutRootPath   = EXT:w4_cookiebar/Resources/Private/fluid_styled_content/Layouts/
+    }
+
+    settings {
+        options {
+        }
+    }
+
+    configuration {
+        cookieButtonMapsHidden = 0
+        cookieName {
+            # this is needed for GTM manipulation
+            all = default_cookiebar_a
+            dismissed = default_cookiebar_dismissed
+        }
+    }
+
+}

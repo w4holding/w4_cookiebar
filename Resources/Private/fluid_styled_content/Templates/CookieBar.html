@@ -1,0 +1,28 @@
+<f:layout name="Default"/>
+
+<f:section name="ContentRow">
+
+    <div id="cookie_bar_v2_content" class="row row-without-maps">
+        <f:variable name="colSmAmount" value="3" />
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.cookieButtonMapsHidden')} == 1">
+            <f:variable name="colSmAmount" value="{colSmAmount + 1}" />
+        </f:if>
+        <div class="col-12 col-sm-{colSmAmount} col">
+            <f:render partial="Banner/ContentDataPrivacy" arguments="{_all}" />
+        </div>
+        <div class="col-12 col-sm-{colSmAmount} col">
+            <f:render partial="Banner/ContentAnalytics" arguments="{_all}" />
+        </div>
+        <f:if condition="{f:cObject(typoscriptObjectPath: 'lib.cookieButtonMapsHidden')} == 1">
+            <f:else>
+                <div class="col-12 col-sm-{colSmAmount} col">
+                    <f:render partial="Banner/ContentMaps" arguments="{_all}" />
+                </div>
+            </f:else>
+        </f:if>
+        <div class="col-12 col-sm-{colSmAmount} col">
+            <f:render partial="Banner/ContentCookieInfo" arguments="{_all}" />
+        </div>
+    </div>
+
+</f:section>

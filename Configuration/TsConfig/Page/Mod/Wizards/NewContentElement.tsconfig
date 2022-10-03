@@ -1,0 +1,23 @@
+mod.wizards.newContentElement.wizardItems {
+   common {
+      elements {
+         w4_cookiebar_banner {
+            iconIdentifier = w4-cookiebar-banner
+            title = LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang_db.xml:w4_cookiebar.ctype.banner
+            description = LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang_db.xml:w4_cookiebar.wizard.description
+            tt_content_defValues {
+               CType = w4_cookiebar_banner
+            }
+         }
+         w4_cookiebar_conditionalGoogleMaps {
+            iconIdentifier = mimetypes-x-content-html
+            title = LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang_db.xml:w4_cookiebar.ctype.conditional_google_maps
+            description = LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang_db.xml:w4_cookiebar.ctype.conditional_google_maps
+            tt_content_defValues {
+               CType = w4_cookiebar_conditionalGoogleMaps
+            }
+         }
+      }
+      show := addToList(w4_cookiebar_banner,w4_cookiebar_conditionalGoogleMaps)
+   }
+}

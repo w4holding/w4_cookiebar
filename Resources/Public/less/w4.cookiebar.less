@@ -1,0 +1,322 @@
+@import (reference) "_variables.less";
+@import "_conditional-google-maps.less";
+
+/**
+ * cookiebar banner
+ */
+#cookie_bar_v2 {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: rgb(30, 30, 30);
+    padding: 25px 0 0;
+    background: rgba(255, 255, 255, 0.95);
+
+    &.position-top {
+        /* positioning to top */
+        bottom: auto;
+        top: 0;
+        border-bottom: 10px #797979 solid;
+    }
+
+    &.position-bottom {
+        /* positioning to bottom */
+        bottom: 0;
+        top: auto;
+        border-top: 10px #797979 solid;
+    }
+
+    .container {
+        position: relative;
+        // this is for center positioning  + auto width
+    }
+}
+
+#cookie_bar_v2_head {
+    padding: 0 15px 14px;
+    border-bottom: 2px rgba(14, 35, 99, .1) solid;
+
+    &>strong {
+        font-size: 20px;
+        font-family: 'HelveticaNeueLTStd Medium', Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        color: @color_ci_main;
+    }
+
+    &>span {
+        float: right;
+        clear: both;
+        display: block;
+        vertical-align: top;
+    }
+}
+
+#cookie_bar_v2_content {
+    padding: 5px 15px 15px;
+
+    label {
+        color: rgb(69, 69, 69);
+        font-weight: 400;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        font-size: 16px;
+        font-family: 'HelveticaNeueLTStd Medium', Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        color: rgb(30, 30, 30);
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &.checkbox>span {
+            padding-left: 42px;
+            cursor: pointer;
+            display: block;
+        }
+    }
+
+    span {
+        // prevent overriding
+        color: rgb(30, 30, 30);
+    }
+
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        border: 1px solid #34495E;
+        border-radius: 4px;
+        outline: none;
+        transition-duration: 0.3s;
+        background-color: #41B883;
+        cursor: pointer;
+
+        /* checkbox slider - inactive */
+
+        &+span::before {
+            content: " ";
+            display: block;
+            height: 12px;
+            width: 29px;
+            background: rgb(230, 230, 230);
+            border-radius: 10px;
+            position: absolute;
+            top: 2px;
+            left: 0;
+        }
+
+        &+span::after {
+            display: block;
+            content: " ";
+            height: 18px;
+            width: 18px;
+            background: rgb(144, 144, 144);
+            border-radius: 18px;
+            position: absolute;
+            top: -1px;
+            left: 0;
+        }
+
+        /* checkbox slider - active */
+
+        &:checked+span::after {
+            background: @color_ci_main;
+            left: 12px;
+        }
+
+        &:active {
+            border: 2px solid #34495E;
+        }
+    }
+
+    p {
+        color: rgb(21, 21, 21);
+        text-align: left;
+        font-size: 12px;
+    }
+
+    >div {
+        &>p:first-child {
+            font-size: 12px;
+            padding-top: 10px;
+            padding-top: 10px;
+
+            a {
+                color: rgb(21, 21, 21);
+                text-decoration: underline;
+            }
+        }
+
+        &:last-child {
+            margin-left: auto;
+        }
+    }
+}
+
+#cookie_bar_v2_btns {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+
+    .btn {
+        margin-bottom: 5px;
+    }
+}
+
+#cookie_bar_allow_selected {
+    background: #dddddd;
+    color: @color_ci_main_light  !important;
+
+    &:hover {
+        background: @color_ci_main  !important;
+        color: rgb(255, 255, 255) !important;
+    }
+}
+
+#cookie_bar_allow_all {
+    background: @color_ci_main_light  !important;
+    color: rgb(255, 255, 255) !important;
+
+    &:hover {
+        background: @color_ci_main  !important;
+        color: rgb(255, 255, 255) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #cookie_bar_v2_content div>p br+br {
+        display: none;
+    }
+
+    #cookie_bar_v2_head>strong {
+        font-size: 16px;
+    }
+
+    #cookie_bar_v2_content label {
+        font-size: 15px;
+    }
+
+    #cookie_bar_v2_btns {
+        position: relative;
+        top: initial;
+        right: initial;
+        padding: 0 15px 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    #cookie_bar_v2_content {
+        label {
+            font-size: 13px;
+            display: block;
+
+            &.checkbox>span {
+                padding-right: 42px;
+                padding-left: initial;
+            }
+        }
+
+        /* checkbox slider - inactive */
+
+        input {
+            &+span {
+                &::before {
+                    left: initial;
+                    right: 0;
+                }
+
+                &::after {
+                    left: initial;
+                    right: 12px;
+                }
+            }
+
+            /* checkbox slider - active */
+
+            &:checked {
+                &+span {
+                    &::after {
+                        left: initial;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width : @size_screen-min-lg) {
+
+    #cookie_bar_v2 {
+
+        .container {
+            width: 1024px;
+        }
+    }
+}
+
+/**
+ * cookiebar editButton
+ */
+#cookie_bar_edit_button {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+
+    background-color: #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.bottom-left {}
+
+    &.bottom-right {
+        right: 0;
+        left: auto;
+    }
+
+    a {
+        display: block;
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        background-image: url('/typo3conf/ext/w4_cookiebar/Resources/Public/images/checkbox_weiss.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        border: none;
+
+        // hide link text
+        text-indent: -999em;
+    }
+}
+
+@media only screen and (min-width : @size_screen-min-xs) {}
+
+@media only screen and (min-width : @size_screen-min-sm) {}
+
+@media only screen and (min-width : @size_screen-min-md) {}
+
+@media only screen and (min-width : @size_screen-min-lg) {
+    #cookie_bar_edit_button {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media only screen and (min-width : @size_screen-min-xl) {}
+
+@media only screen and (min-width : @size_screen-min-max) {
+    #cookie_bar_edit_button {
+        width: 70px;
+        height: 70px;
+    }
+}

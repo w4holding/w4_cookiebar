@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2019-03-12T13:04:15Z" product-name="w4Cookiebar">
+        <header/>
+        <body>
+            <trans-unit id="w4_cookiebar.ctype.banner" xml:space="preserve" approved="yes">
+                <source>Cookie Banner</source>
+                <target>Cookie Meldung</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.ctype.edit_button" xml:space="preserve" approved="yes">
+                <source>Cookie Banner edit button</source>
+                <target>Cookie Meldung Bearbeiten-Button</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.ctype.conditional_google_maps" xml:space="preserve" approved="yes">
+                <source>Cookie Consent HTML Wrapper</source>
+                <target>Cookie-Einwilligungs-HTML-Wrapper</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.palette.banner" xml:space="preserve" approved="yes">
+                <source>Cookie Banner</source>
+                <target>Cookie Meldung</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.palette.conditionalGoogleMaps" xml:space="preserve" approved="yes">
+                <source>Cookie controlled Google Maps</source>
+                <target>Cookie gesteuertes Google Maps</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.wizard.title" xml:space="preserve" approved="yes">
+                <source>Cookie Banner</source>
+                <target>Cookie Meldung</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.wizard.description" xml:space="preserve" approved="yes">
+                <source>Create Editable Cookie Banner</source>
+                <target>Editierbare Cookie-Meldung erstellen</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.widget.text" xml:space="preserve" approved="yes">
+                <source>Cookie Banner</source>
+                <target>Cookie Meldung</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.text" xml:space="preserve" approved="yes">
+                <source>Text (if empty, default text will be used)</source>
+                <target>Text (wenn leer wird Standardtext verwendet)</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.w4_cookiebar_position" xml:space="preserve">
+                <source>Position of the banner</source>
+                <target>Bannerposition</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.w4_cookiebar_position.top" xml:space="preserve">
+                <source>Top</source>
+                <target>Oben</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.w4_cookiebar_position.bottom" xml:space="preserve">
+                <source>Bottom</source>
+                <target>Unten</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.button_text" xml:space="preserve" approved="yes">
+                <source>Button Text</source>
+                <target>Schaltflächentext</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.datenschutz_text" xml:space="preserve" approved="yes">
+                <source>Privacy text (if empty, default text will be used)</source>
+                <target>Datenschutz Text (wenn leer wird Standardtext verwendet)</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.datenschutz_link" xml:space="preserve" approved="yes">
+                <source>Privacy link</source>
+                <target>Datenschutz Link</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.wrapper_options" xml:space="preserve" approved="yes">
+                <source>Show wrapper if cookie consent is given fot it</source>
+                <target>Wrapper anzeigen, wenn Cookie-Einwilligung dafür erteilt wurde</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.google_maps_code" xml:space="preserve" approved="yes">
+                <source>HTML-Code (e.g. iframe)</source>
+                <target>HTML Code (z.B. iframe)</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.google_maps_placeholder_image" xml:space="preserve" approved="yes">
+                <source>Placeholder image (if cookies are not accepted)</source>
+                <target>Platzhalterbild (wenn Cookies nicht akzeptiert)</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.edit" xml:space="preserve">
+                <source>Show Edit cookie settings button</source>
+                <target>Schaltfläche Cookie-Einstellungen bearbeiten anzeigen</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
