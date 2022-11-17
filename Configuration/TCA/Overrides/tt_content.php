@@ -6,7 +6,7 @@ use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 (function(&$tca, $extensionKey) {
 
-    $ll = 'LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang_db.xml:w4_cookiebar.';
+    $ll = 'LLL:EXT:w4_cookiebar/Resources/Private/Language/locallang_db.xlf:w4_cookiebar.';
 
     $tempColumns = [
         'w4_cookiebar_position' => [
@@ -72,7 +72,7 @@ use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
             ]
          ],
          'w4_cookiebar_wrapper_options' => [
-            'label' => $ll . 'Show wrapper based on the condition',
+            'label' => $ll . 'wrapper_options',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -109,9 +109,9 @@ use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
      */
     ExtensionManagementUtility::addPlugin(
         [
-            $ll .'w4_cookiebar.ctype.banner',
+            $ll .'ctype.banner',
             'w4_cookiebar_banner', // @SEE typoscript tt_content.### for pipe in
-            'EXT:w4_cookiebar/Resources/Public/images/icons/w4_cookiebar.png'
+            'EXT:w4_cookiebar/Resources/Public/images/Icons/w4_cookiebar_banner.png'
         ],
         'CType',
         $extensionKey
@@ -149,9 +149,9 @@ use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
     ExtensionManagementUtility::addPlugin(
         [
-            $ll .'w4_cookiebar.ctype.conditional_google_maps',
+            $ll .'ctype.conditional_google_maps',
             'w4_cookiebar_conditionalGoogleMaps', // @SEE typoscript tt_content.### for pipe in
-            'EXT:w4_cookiebar/Resources/Public/images/icons/w4_cookiebar.png'
+            'EXT:w4_cookiebar/Resources/Public/images/Icons/w4_cookiebar_banner.png'
         ],
         'CType',
         $extensionKey
@@ -161,7 +161,7 @@ use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
         'showitem' => '
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.general;general,
             sys_language_uid, l10n_parent, l10n_diffsource,
-            --palette--;' . $ll .'w4_cookiebar.palette.conditionalGoogleMaps;w4_cookiebar_conditionalGoogleMaps,
+            --palette--;' . $ll .'palette.conditionalGoogleMaps;w4_cookiebar_conditionalGoogleMaps,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:tabs.access,            

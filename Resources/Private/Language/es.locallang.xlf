@@ -67,6 +67,10 @@
                 <source>Allow Marketing / Analysis content</source>
                 <target>Permitir contenido de análisis de márketing</target>
             </trans-unit>
+            <trans-unit id="w4_cookiebar.edit" xml:space="preserve">
+                <source>Show Edit cookie settings button</source>
+                <target>Mostrar botón de eitar las cookies</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

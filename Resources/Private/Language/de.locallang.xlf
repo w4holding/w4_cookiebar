@@ -51,21 +51,25 @@
                 <source>Edit cookie settings</source>
                 <target>Cookieeinstellungen bearbeiten</target>
             </trans-unit>
-            <trans-unit id="w4_cookiebar..conditional_google_maps.popup_text" xml:space="preserve">
+            <trans-unit id="w4_cookiebar.conditional_google_maps.popup_text" xml:space="preserve">
                 <source>Please click the button so that Google Maps can be displayed.</source>
                 <target>Bitte klicken Sie auf den Button, damit Google Maps angezeigt werden kann.</target>
             </trans-unit>
-            <trans-unit id="w4_cookiebar..conditional_google_maps.popup_button" xml:space="preserve">
+            <trans-unit id="w4_cookiebar.conditional_google_maps.popup_button" xml:space="preserve">
                 <source>Allow Google Maps</source>
                 <target>Erlaube Google Maps</target>
             </trans-unit>
-            <trans-unit id="w4_cookiebar..conditional_marketing.popup_text" xml:space="preserve">
+            <trans-unit id="w4_cookiebar.conditional_marketing.popup_text" xml:space="preserve">
                 <source>Please click the button so that Marketing can be displayed.</source>
                 <target>Bitte klicken Sie auf den Button, damit Marketing inhalt angezeigt werden kann.</target>
             </trans-unit>
-            <trans-unit id="w4_cookiebar..conditional_marketing.popup_button" xml:space="preserve">
+            <trans-unit id="w4_cookiebar.conditional_marketing.popup_button" xml:space="preserve">
                 <source>Allow Marketing / Analysis content</source>
                 <target>Erlauben Sie Marketing-/Analyse-Inhalte</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.edit" xml:space="preserve">
+                <source>Show Edit cookie settings button</source>
+                <target>Schaltfläche Cookie-Einstellungen bearbeiten anzeigen</target>
             </trans-unit>
         </body>
     </file>

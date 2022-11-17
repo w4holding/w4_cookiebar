@@ -14,7 +14,7 @@ defined('TYPO3') or die();
     $iconRegistry->registerIcon(
         'w4-cookiebar-banner',
         \TYPO3\CMS\Core\Imaging\IconProvider\BitmapIconProvider::class,
-        ['source' => 'EXT:w4_cookiebar/Resources/Public/Icons/w4_cookiebar_banner..png']
+        ['source' => 'EXT:w4_cookiebar/Resources/Public/Icons/w4_cookiebar_banner.png']
     ); 
 
 })( 'w4_cookiebar');

@@ -7,11 +7,6 @@ tt_content {
         templateName = CookieBar
     }
 
-    w4_cookiebar_editButton < plugin.tx_w4cookiebar.view
-    w4_cookiebar_editButton {
-        templateName = CookieBarEditButton
-    }
-
     w4_cookiebar_conditionalGoogleMaps < plugin.tx_w4cookiebar.view
     w4_cookiebar_conditionalGoogleMaps {
         templateName = CookieConditionalGoogleMaps
