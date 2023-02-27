@@ -1,7 +1,7 @@
 lib.gtm_head = TEXT
 lib.gtm_head.value =
 
-[applicationContext matches "/^Production/" && {$gtm.embed} == 1]
+[applicationContext matches "/^Production/" && "{$gtm.embed}" == 1]
     lib.gtm_head.value (
         <!-- Google Tag Manager -->
         <script>
