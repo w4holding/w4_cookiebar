@@ -1,0 +1,1 @@
+@import 'EXT:w4_cookiebar/Configuration/TypoScript/constants.typoscript'

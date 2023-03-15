@@ -1,7 +1,0 @@
-lib.cookiedata = TEXT
-lib.cookiedata.value (
-    <div id="cookieKey" data-key="{$plugin.tx_w4cookiebar.configuration.cookieKey}" data-domainname="{$plugin.tx_w4cookiebar.configuration.cookieDomainName}"></div>
-)
-
-lib.cookieButtonMapsHidden = TEXT
-lib.cookieButtonMapsHidden.value = {$plugin.tx_w4cookiebar.configuration.cookieButtonMapsHidden}

@@ -3,11 +3,11 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'W4 Cookiebar',
     'description' => 'W4 extension to provide a GDPR (DE: "DSGVO") cookie banner.',
-    'version' => '1.0.3',
+    'version' => '1.0.4',
     'category' => 'fe',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-11.5.99'
+            'typo3' => '11.5.0-12.0.99'
         ],
     ],
     'state' => 'stable',

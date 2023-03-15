@@ -51,6 +51,12 @@
             <trans-unit id="w4_cookiebar.wrapper_options" xml:space="preserve">
                 <source>Show wrapper if cookie consent is given fot it</source>
             </trans-unit>
+            <trans-unit id="w4_cookiebar.wrapper_options.marketing" xml:space="preserve">
+                <source>Analysis &amp; Marketing</source>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.wrapper_options.maps" xml:space="preserve">
+                <source>Location maps</source>
+            </trans-unit>
             <trans-unit id="w4_cookiebar.google_maps_code" xml:space="preserve">
                 <source>HTML-Code (e.g. iframe)</source>
             </trans-unit> 

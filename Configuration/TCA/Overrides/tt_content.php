@@ -77,8 +77,8 @@ use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    [$ll . 'Analysis & Marketing', 'marketing'],
-                    [$ll . 'Location maps', 'maps'],
+                    [$ll . 'wrapper_options.marketing', 'marketing'],
+                    [$ll . 'wrapper_options.maps', 'maps'],
                 ]
             ],
         ],
@@ -121,11 +121,9 @@ use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
         'showitem' => '
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.general;general,
             --palette--;' . $ll . 'w4_cookiebar.palette.banner;w4_cookiebar_banner,
-            
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:tabs.access,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.access;access,
             hidden,
-            
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:tabs.extended
         ',
         'columns' => [
@@ -168,7 +166,6 @@ use \TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.access;access,
             hidden,
             --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:palette.visibility;visibility,
-            
             --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xml:tabs.extended
         ',
         'columns' => [

@@ -21,27 +21,27 @@
             <f:comment>render the HTML source code</f:comment>
             <!-- BEGIN Marketing -->
             <script>
-                document.addEventListener("DOMContentLoaded",function () {
+                document.addEventListener("DOMContentLoaded",function () <f:format.raw value="{" />
                     var marketingLoaded = false;
-                    var f = function() {
-                        if (document.cookie.indexOf('<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_a') >= 0 && !marketingLoaded) {
+                    var f{data.uid} = function() <f:format.raw value="{" />
+                        if (document.cookie.indexOf('{cookieKey}_cookiebar_v2_a') >= 0 && !marketingLoaded) <f:format.raw value="{" />
                             marketingLoaded = true;
-                            jQuery('#c<f:format.raw>{data.uid}</f:format.raw> .cookie-conditional-marketing > .marketing-content').html(
-                                '<f:format.raw>{data.bodytext}</f:format.raw>'
+                            jQuery('#c{data.uid} .cookie-conditional-marketing > .marketing-content').html(
+                                '{data.bodytext -> f:format.raw()}'
                             );
                             jQuery('.cookie-conditional-marketing > .gdpr-hint-wrapper').hide();
                         }
                         document.dispatchEvent(
                             new Event(
-                                '<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_dismissed'
+                                '{cookieKey}_cookiebar_v2_dismissed'
                             )
                         );
                     };
-                    f();
-                    jQuery('html').on('<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_dismissed', f);
-                    jQuery('#accept-marketing').on('click', function() {
-                        setTimeout(function() {
-                            f();
+                    f{data.uid}();
+                    jQuery('html').on('{cookieKey}_cookiebar_v2_dismissed', f{data.uid});
+                    jQuery('#accept-marketing').on('click', function() <f:format.raw value="{" />
+                        setTimeout(function() <f:format.raw value="{" />
+                            f{data.uid}();
                         }, 1000);
                     });
                 }, false);
@@ -69,27 +69,27 @@
             <f:comment>render the HTML source code</f:comment>
             <!-- BEGIN Google Maps -->
             <script>
-                document.addEventListener("DOMContentLoaded",function () {
+                document.addEventListener("DOMContentLoaded",function () <f:format.raw value="{" />
                     var mapsLoaded = false;
-                    var f = function() {
-                        if (document.cookie.indexOf('<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_m') >= 0 && !mapsLoaded) {
+                    var f{data.uid} = function() <f:format.raw value="{" />
+                        if (document.cookie.indexOf('{cookieKey}_cookiebar_v2_m') >= 0 && !mapsLoaded) <f:format.raw value="{" />
                             mapsLoaded = true;
-                            jQuery('#c<f:format.raw>{data.uid}</f:format.raw> .cookie-conditional-google-maps > .maps-content').html(
-                                '<f:format.raw>{data.bodytext}</f:format.raw>'
+                            jQuery('#c{data.uid} .cookie-conditional-google-maps > .maps-content').html(
+                                '{data.bodytext -> f:format.raw()}'
                             );
                             jQuery('.cookie-conditional-google-maps > .gdpr-hint-wrapper').hide();
                         }
                         document.dispatchEvent(
                             new Event(
-                                '<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_dismissed'
+                                '{cookieKey}_cookiebar_v2_dismissed'
                             )
                         );
                     };
-                    f();
-                    jQuery('html').on('<f:format.raw>{cookieKey}</f:format.raw>_cookiebar_dismissed', f);
-                    jQuery('#accept-google-maps').on('click', function() {
-                        setTimeout(function() {
-                            f();
+                    f{data.uid}();
+                    jQuery('html').on('{cookieKey}_cookiebar_v2_dismissed', f{data.uid});
+                    jQuery('#accept-google-maps').on('click', function() <f:format.raw value="{" />
+                        setTimeout(function() <f:format.raw value="{" />
+                            f{data.uid}();
                         }, 1000);
                     });
                 }, false);
