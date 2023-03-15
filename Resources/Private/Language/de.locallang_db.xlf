@@ -67,6 +67,14 @@
                 <source>Show wrapper if cookie consent is given fot it</source>
                 <target>Wrapper anzeigen, wenn Cookie-Einwilligung dafür erteilt wurde</target>
             </trans-unit>
+            <trans-unit id="w4_cookiebar.wrapper_options.marketing" xml:space="preserve" approved="yes">
+                <source>Analysis &amp; Marketing</source>
+                <target>Analyse &amp; Marketing</target>
+            </trans-unit>
+            <trans-unit id="w4_cookiebar.wrapper_options.maps" xml:space="preserve" approved="yes">
+                <source>Location maps</source>
+                <target>Lagepläne</target>
+            </trans-unit>
             <trans-unit id="w4_cookiebar.google_maps_code" xml:space="preserve" approved="yes">
                 <source>HTML-Code (e.g. iframe)</source>
                 <target>HTML Code (z.B. iframe)</target>

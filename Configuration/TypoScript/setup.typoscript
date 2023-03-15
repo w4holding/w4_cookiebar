@@ -1,0 +1,85 @@
+plugin.tx_w4cookiebar {
+    view < lib.contentElement
+    view {
+        templateRootPaths {
+            10 = {$plugin.tx_w4cookiebar.view.templateRootPath}
+        }
+        partialRootPaths {
+            10 = {$plugin.tx_w4cookiebar.view.partialRootPath}
+        }
+        layoutRootPaths {
+            10 = {$plugin.tx_w4cookiebar.view.layoutRootPath}
+        }
+    }
+}
+
+lib.cookiedata = TEXT
+lib.cookiedata.value (
+    <div id="cookieKey" data-key="{$plugin.tx_w4cookiebar.configuration.cookieKey}" data-domainname="{$plugin.tx_w4cookiebar.configuration.cookieDomainName}"></div>
+)
+
+lib.cookieButtonMapsHidden = TEXT
+lib.cookieButtonMapsHidden.value = {$plugin.tx_w4cookiebar.configuration.cookieButtonMapsHidden}
+
+lib.gtm_head = TEXT
+lib.gtm_head.value =
+
+[applicationContext matches "/^Production/" && "{$gtm.embed}" == 1]
+    lib.gtm_head.value (
+        <!-- Google Tag Manager -->
+        <script>
+        (function($){
+            var gtmLoaded = false;
+            var f = function() {
+                if (document.cookie.indexOf('{$plugin.tx_w4cookiebar.configuration.cookieKey}_cookiebar_a') >= 0 && !gtmLoaded) {
+                    gtmLoaded = true;
+                    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayer','{$gtm.key}');
+                }
+            };
+            f();
+            $('html').on('{$plugin.tx_w4cookiebar.configuration.cookieKey}_cookiebar_dismissed', f);
+        })(jQuery);
+        </script>
+        <!-- End Google Tag Manager -->
+    )
+[global]
+
+page {
+    includeCSS {
+        bootstrap = EXT:w4_cookiebar/Resources/Public/css/bootstrap.min.css
+        w4_cookiebar = EXT:w4_cookiebar/Resources/Public/css/w4.cookiebar.min.css
+    }
+    includeJSFooterlibs {
+        jquery = EXT:w4_cookiebar/Resources/Public/lib/jquery/jquery.min.js
+        jquery_cookie = EXT:w4_cookiebar/Resources/Public/lib/jquery.cookie/jquery.cookie.min.js
+        w4_cookiebar = EXT:w4_cookiebar/Resources/Public/js/w4.cookiebar.js
+    }
+}
+
+tt_content {
+    # we dont have a php Controller, so add the content template name here manually
+    # https://docs.typo3.org/m/typo3/book-extbasefluid/master/en-us/b-ExtbaseReference/Index.html
+    w4_cookiebar_banner < plugin.tx_w4cookiebar.view
+    w4_cookiebar_banner {
+        templateName = CookieBar
+    }
+    w4_cookiebar_conditionalGoogleMaps < plugin.tx_w4cookiebar.view
+    w4_cookiebar_conditionalGoogleMaps {
+        templateName = CookieConditionalGoogleMaps
+        dataProcessing {
+            # make the tt_content field "image" available in the fluid template
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+            }
+        }
+        variables {
+            cookieKey = TEXT
+            cookieKey.value = {$plugin.tx_w4cookiebar.configuration.cookieKey}
+        }
+    }
+}

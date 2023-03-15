@@ -1,8 +1,6 @@
 <?php
 
-if (!defined('TYPO3_MODE')) {
-    die('Access denied.');
-}
+defined('TYPO3') or die();
 
 (function($extensionKey) {
 
@@ -11,6 +9,6 @@ if (!defined('TYPO3_MODE')) {
      * static includes
      */
 
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extensionKey, 'Configuration/TypoScript/BaseCookiebar', 'W4 Cookiebar');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($extensionKey, 'Configuration/TypoScript', 'W4 Cookiebar');
 
 })('w4_cookiebar');
