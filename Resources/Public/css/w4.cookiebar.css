@@ -1,7 +1,7 @@
 /**
  * cookie conditional google maps
  */
-.cookie-conditional-google-maps {
+ .cookie-conditional-google-maps {
   position: relative;
 }
 
@@ -206,7 +206,7 @@
 #cookie_bar_v2_btns {
   position: absolute;
   top: -10px;
-  right: 15px;
+  right: 0;
 }
 
 #cookie_bar_v2_btns .btn {
@@ -250,7 +250,7 @@
     position: relative;
     top: initial;
     right: initial;
-    padding: 0 15px 15px;
+    padding: 0 0 15px 0;
   }
 }
 
@@ -279,6 +279,13 @@
   #cookie_bar_v2_content input:checked+span::after {
     left: initial;
     right: 0;
+  }
+  #cookie_bar_v2_btns {
+    padding: 0 5px 15px 0;
+  }
+
+  #cookie_bar_v2_btns a.btn {
+      width: calc(100% - 20px);
   }
 }
 
