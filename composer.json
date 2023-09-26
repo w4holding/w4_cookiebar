@@ -1,7 +1,7 @@
 {
   "name": "w4services/w4_cookiebar",
   "type": "typo3-cms-extension",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "W4 extension to provide a GDPR (DE: 'DSGVO') cookie banner.",
   "homepage": "https://www.w-4.com",
   "repositories": [
@@ -22,7 +22,7 @@
       "sort-packages": true
   },
   "require": {
-      "typo3/cms-core": "^11.5 || ^12"
+      "typo3/cms-core": "^11.5 || ^12.4"
   },
   "support": {
       "issues": "https://github.com/w4holding/w4_cookiebar/issues"
