@@ -213,38 +213,6 @@
     #cookie_bar_v2_content {
         label {
             font-size: 13px;
-
-            &.checkbox>span {
-                padding-right: 42px;
-                padding-left: initial;
-            }
-        }
-
-        /* checkbox slider - inactive */
-
-        input {
-            &+span {
-                &::before {
-                    left: initial;
-                    right: 0;
-                }
-
-                &::after {
-                    left: initial;
-                    right: 12px;
-                }
-            }
-
-            /* checkbox slider - active */
-
-            &:checked {
-                &+span {
-                    &::after {
-                        left: initial;
-                        right: 0;
-                    }
-                }
-            }
         }
     }
     #cookie_bar_v2_btns {

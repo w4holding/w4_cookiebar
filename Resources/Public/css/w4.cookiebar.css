@@ -259,25 +259,6 @@
     font-size: 13px;
   }
 
-  #cookie_bar_v2_content label.checkbox>span {
-    padding-right: 42px;
-    padding-left: initial;
-  }
-
-  #cookie_bar_v2_content input+span::before {
-    left: initial;
-    right: 0;
-  }
-
-  #cookie_bar_v2_content input+span::after {
-    left: initial;
-    right: 12px;
-  }
-
-  #cookie_bar_v2_content input:checked+span::after {
-    left: initial;
-    right: 0;
-  }
   #cookie_bar_v2_btns {
     padding: 0 0 15px 0;
   }
