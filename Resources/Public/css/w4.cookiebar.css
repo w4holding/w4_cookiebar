@@ -146,6 +146,7 @@
   background-color: #41B883;
   cursor: pointer;
   visibility: hidden;
+  display: none;
 }
 
 #cookie_bar_v2_content input+span::before {

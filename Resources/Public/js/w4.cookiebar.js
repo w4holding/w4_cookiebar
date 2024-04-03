@@ -3,6 +3,13 @@ var W4;
 jQuery(function($) {
     'use strict';
 
+    if ($('#cookie_bar_v2').length) {
+        $('#cookie_bar_v2').appendTo('body');
+    }
+    if ($('#cookie_bar_edit_button').length) {
+        $('#cookie_bar_edit_button').appendTo('body');
+    }
+
     W4 = W4 || {};
 
     W4.CookieBar = {
